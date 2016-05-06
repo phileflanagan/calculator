@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Calculator (AngularJS)</title>
+    
+    
+    
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,900' rel='stylesheet' type='text/css'>
+
+
+<body ng-app="app" class="ng-cloak">
+<div class="container shell" ng-controller="ctrl" ng-cloak>
+	
+	<!--<pre>{{nums}}</pre>-->
+	
+	<h3 class="text-center branding">Phil's Calculator</h3>
+	<div class="screen">
+		<p class="text-right">{{output}}</p>
+	</div>
+	
+	<!-- start buttons -->
+	<div class="row" id="row1">
+		<div class="col-xs-6 button" id="clr" ng-click="clear()">
+			Clear
+		</div>
+
+		<div class="col-xs-3 button" id="mod" ng-click="modulusFunc()">
+			%
+		</div>
+		<div class="col-xs-3 button" id="divide" ng-click="divideFunc()">
+			/
+		</div>
+	</div>
+
+	<div class="row" id="row2">
+		<div class="col-xs-3 button" id="7" ng-click="pushNum(7)">
+		7
+		</div>
+		<div class="col-xs-3 button" id="8" ng-click="pushNum(8)">
+		8
+		</div>
+		<div class="col-xs-3 button" id="9" ng-click="pushNum(9)">
+		9
+		</div>
+		<div class="col-xs-3 button" id="multiply" ng-click="multiplyFunc()">
+		*
+		</div>
+	</div>
+
+
+<div class="row" id="row3">
+	<div class="col-xs-3 button" id="4" ng-click="pushNum(4)">
+	4
+	</div>
+	<div class="col-xs-3 button" id="5" ng-click="pushNum(5)">
+	5
+	</div>
+	<div class="col-xs-3 button" id="6" ng-click="pushNum(6)">
+	6</div>
+	<div class="col-xs-3 button" id="minus" ng-click="subtractFunc()">
+	- 
+	</div>
+</div>
+
+<div class="row" id="row4">
+	<div class="col-xs-3 button" id="1" ng-click="pushNum(1)">
+	1 </div>
+	<div class="col-xs-3 button" id="2" ng-click="pushNum(2)">
+	2</div>
+	<div class="col-xs-3 button" id="3" ng-click="pushNum(3)">
+	3</div>
+	<div class="col-xs-3 button" id="plus" ng-click="addFunc()">
+	+</div>
+</div>
+
+<div class="row" id="row5">
+	<div class="col-xs-3 button" id="dot" ng-click='pushNum(".")'>
+	.</div>
+	<div class="col-xs-3 button" id="0" ng-click="pushNum(0)">
+	0</div>
+	<div class="col-xs-6 button" id="equals" ng-click="equalsFunc()">
+	=</div>
+
+</div>
+
+</div>
+	<p class="footer">&copy; Copyright 2016 Phil Flanagan</p>
+</body>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.2/angular.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.2/angular.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>
